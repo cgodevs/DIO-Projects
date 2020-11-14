@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+P {
+    margin: 3px;
+    text-align: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centralized {
+    display: flex;
+    align-items: center;
+}
+
+.ig-wrapper {
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 0;
+}
+
+.top-wrap {
+    justify-content: center;
+    width: 60%;
+    height: 100vh;
+    margin: 20px
+}
+
+.phoneImage {
+    justify-content: center;
+    width: 50%;
+}
+
+.phoneImage img {
+    height: 50rem;
+    margin: 0 0 0 -200px;
+}
+
+.right-column {
+    justify-content: space-around;
+    flex-direction: column;
+    width: 35%;
+    min-height: 34rem;
+}
+
+.group {
+    justify-content: space-evenly;
+    flex-direction: column;
+    min-width: 368px;
+    border: 1px solid lightgray;
+    background-color: #ffffff;
+    padding: 1.3rem 0 1.3rem 0;
+    text-align: center;
+    margin: 5px;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.igLogo {
+    height: 4rem;
+}
+
+.profile-pic {
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    border: solid 1px #efefef;
+    margin: 22px 0 22px 0;
+}
+
+.profile-pic img {
+    height: 6rem;
+}
+
+.blueButton {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    min-width: 120px;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+}
+
+.blueLink {
+    color: #0095f6;
+    margin-top: 1rem;
+    min-width: 120px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.groupPadding {
+    padding: 20px;
+    white-space: nowrap;
+}
+
+.notaccount {
+    color: rgb(160, 160, 160);
+}
+
+.downloadTheApp {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5rem 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.downloadButtons {
+    justify-content: space-evenly;
+    padding: 1.5rem;
+    width: 150%;
+    display: flex;
+}
+
+.appdownload {
+    width: 10.4rem;
+    height: 3rem;
+    background-size: cover;
+}
+
+.appdownload:nth-child(1) {
+    background-image: url('./images/appstore-download.png');
+}
+
+.appdownload:nth-child(2) {
+    background-image: url('./images/googleplay-download.png');
+}
+
+footer {
+    justify-content: space-around;
+    padding-bottom: 3rem;
+    margin: 10px;
+    width: 75%;
+    color: rgb(160, 160, 160);
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+
+.upperRow {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.lowerRow {
+    white-space: nowrap;
+    display: flex;
+    padding: 8px;
+}
+
+footer>div>a,
+footer>div>p {
+    color: rgb(160, 160, 160);
+    font-size: 12px;
+    margin: 7px;
+    white-space: nowrap;
+}
+
+@media (max-width: 820px) {
+    body {
+        background-color: rgb(243, 243, 243);
+    }
+    .phoneImage {
+        display: none;
+    }
+    .ig-wrapper,
+    footer {
+        width: 90%;
+    }
+    .right-column {
+        width: 100%;
+    }
+    .group {
+        border: 1px solid transparent;
+        background-color: rgb(243, 243, 243);
+    }
+    .downloadButtons {
+        flex-wrap: wrap;
+    }
+    .top-wrap {
+        margin: 0;
+    }
+}
+
+@media (max-width: 370px) {
+    body {
+        position: fixed;
+    }
+    .top-wrap {
+        margin-top: 0;
+    }
+}
+
+@media (max-height: 450px) {
+    footer {
+        visibility: hidden;
+    }
+    .group,
+    .downloadButtons {
+        padding: 0;
+        margin: 0
+    }
+}
